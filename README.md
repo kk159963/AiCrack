@@ -9,7 +9,7 @@ sudo apt install android-tools-adb
 
 
 
-sudo apt install android-tools-adb
+sudo apt install android-tools-fastboot
 
 
 
@@ -38,8 +38,7 @@ adb kill-server
 
 adb tcpip 5555
 
-
-adb connect <target ip>:<Port>
+-- adb connect <target ip>:<Port>
 
   
   
