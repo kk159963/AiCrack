@@ -1,7 +1,7 @@
 # AiCrack
 This tool is used to attack on android phone using adb 
 
-Pre Request
+# Pre Request
 
 
 
@@ -30,7 +30,7 @@ cd AiCrack
 python3 AiCrack.py
 
 
-Before That Connect Pc And target phone on same network
+# Before That Connect Pc And target phone on same network
 
 
 adb kill-server
