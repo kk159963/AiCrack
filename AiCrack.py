@@ -21,7 +21,8 @@ class Main:
 		print('___/ |    |/       \|____/   \____/   \/  \/  ')
 		print('                                              ')
 		print(' ---------------------------------------------')
-		print('Versions : BrowAdb .v2')
+		print('Versions : 1.0.2')
+		print('Name : Android Interface Crack')
 		print('Author   : Ravi Panchal')
 		print('\n')
 
