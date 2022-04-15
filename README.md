@@ -2,14 +2,15 @@
 
 ```sudo apt install android-tools-adb```
 
-```sudo apt install android-tools-fastboot```
+```
+sudo apt install android-tools-fastboot
+```
 
 ```sudo apt install python```
 
 ```sudo apt install git```
 
 ```
-
 git clone https://github.com/panchalravi004/AiCrack
 ```
 
