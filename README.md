@@ -1,4 +1,4 @@
-# Pre Request
+## Pre Request
 
 ```sudo apt install android-tools-adb```
 
@@ -8,7 +8,10 @@
 
 ```sudo apt install git```
 
-```git clone https://github.com/panchalravi004/AiCrack```
+```
+
+git clone https://github.com/panchalravi004/AiCrack
+```
 
 # Process to find IP
 
