@@ -49,7 +49,7 @@ class Main:
 					continue
 				sp.call(f"adb shell input keyevent {(int(i[j])+7)}",shell=True)
 			#print(str(i))
-
+			sp.call("adb shell input keyevent 66",shell=True)
 	def chrome(self):
 		time.sleep(1)
 		#lock or unlock the phone
